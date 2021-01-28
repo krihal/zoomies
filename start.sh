@@ -7,5 +7,6 @@ exec docker run \
     -v ${HOME}/.Xauthority:/home/user/.Xauthority \
     -v /home/khn/.config:/home/user/.config/ \
     -v /home/khn/.zoom/:/home/user/.zoom/ \
+    --device /dev/video0:/dev/video0 \
     zoomies \
     "$@"
